@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div class="grid-container">
+    <div class="grid-item" id="header">
+        <div class="header-image-section">
+            <img src="../../../../assets/AH Symbol.jpg">
+        </div>
+        <div class="header-text-section">
+            <div class="title-text">ADWITA HOSPITAL</div>
+            <div>Multiplicity Hospital</div>
+        </div>
+    </div>
+    <div class="grid-item" id="center">
+        <div class="form-title">
+            Hospital Management System <br> Login Portal
+        </div>
+        <div class="form-section">
+            <form #loginForm="ngForm">
+                <label for="username">Username</label>
+                <div>
+                    <input type="text" name="username" id="username">
+                </div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <br>
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="grid-item" id="footer">
+        <footer>
+            <div>
+                Copyright &copy; www.adwitahospital.com. All rights reserved!
+            </div>
+        </footer>
+    </div>
+</div>
+{{ loginForm | json}}
