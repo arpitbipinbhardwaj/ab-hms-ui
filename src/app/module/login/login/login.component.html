@@ -10,10 +10,23 @@
     </div>
     <div class="grid-item" id="center">
         <div class="form-title">
-            Hospital Management System Login Portal
+            Hospital Management System <br> Login Portal
         </div>
         <div class="form-section">
-            Form area
+            <form #loginForm="ngForm">
+                <label for="username">Username</label>
+                <div>
+                    <input type="text" name="username" id="username">
+                </div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <br>
+                    <button>Login</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="grid-item" id="footer">
@@ -24,3 +37,4 @@
         </footer>
     </div>
 </div>
+{{ loginForm | json}}

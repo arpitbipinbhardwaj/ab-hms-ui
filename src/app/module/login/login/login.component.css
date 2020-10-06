@@ -30,19 +30,49 @@
 }
 #center{
     padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background: linear-gradient(to bottom, black 0%, gray 100%);
     color: white;
 }
 #center .form-title{
-    display: flex;
+    display: grid;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 3.5rem;
+    padding: 10px;
 }
-#center .from-section{
-
+#center .form-section{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+label {
+    font-size: 2rem;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+button{
+    border: 3px solid gray;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #ffffff;
+    background: linear-gradient(to top, #000000 0%, #ffffff 100%);
 }
 #footer{
     background-color: gray;
